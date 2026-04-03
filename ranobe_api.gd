@@ -216,7 +216,7 @@ func fetch_book(ranobe_book_id: float) -> Dictionary:
 	return (await _fetch("book/" + str(ranobe_book_id))).get("book", {})
 
 func fetch_series(ranobe_series_id: float) -> Dictionary:
-	return await _fetch("series/" + str(ranobe_series_id)).get("series", {})
+	return (await _fetch("series/" + str(ranobe_series_id))).get("series", {})
 
 func fetch_tags(cache_flags := CACHE_DEFAULT):
 	var cache := Cache.new("TAGS", Cache.MONTH_IN_SECONDS)
