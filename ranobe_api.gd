@@ -1,8 +1,9 @@
 extends Node
 ## https://ranobedb.org/api/docs/v0
 const ENDPOINT := "https://ranobedb.org/api/v0/"
-# "There are currently no rate-limits, but please do not exceed over 60 requests in 1 minute."
-const RATE_LIMIT_IN_SECONDS := 1 # 60 (request) / 60 (seconds)
+
+## "There are currently no rate-limits, but please do not exceed over 60 requests in 1 minute."
+const RATE_LIMIT_IN_SECONDS := 1 # 60 (requests) / 60 (seconds)
 
 const COMMON_LANGUAGES = ['ja', 'en', 'zh-Hans', 'zh-Hant', 'fr', 'es', 'ko', 'ar', 'bg', 'ca', 'cs', 'ck', 'da', 'de', 'el', 'eo', 'eu', 'fa', 'fi', 'ga', 'gd', 'he', 'hi', 'hr', 'hu', 'id', 'it', 'iu', 'mk', 'ms', 'la', 'lt', 'lv', 'nl', 'no', 'pl', 'pt-pt', 'pt-br', 'ro', 'ru', 'sk', 'sl', 'sr', 'sv', 'ta', 'th', 'tr', 'uk', 'ur', 'vi']
 
